@@ -3,36 +3,91 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="courses.css">
+ 
+  
+    <!-- <link rel="stylesheet" href="courses.css"> -->
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="Communication.css">
-    <link rel="stylesheet" href="courses.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="teachersTraining.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script> -->
+<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
 
-    
   </head>
   <body>
-    <!-- Navbar for courses -->
-    <div class="navbar">
-      <div class="logoAndName">
-        <img src="logo1.png" alt="logo">
+    <nav class="navbar navbar-icon-top navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+          <img src="logo1.png" alt="" id="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">
+              <i class="fa fa-home"></i>
+              Home
+              <span class="sr-only">(current)</span>
+              </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fa fa-envelope-o">
+                <span class="badge badge-danger">11</span>
+              </i>
+              Rating
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">
+              <i class="fa fa-envelope-o">
+                <span class="badge badge-warning">11</span>
+              </i>
+              Your Progress
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-envelope-o">
+                <span class="badge badge-primary">11</span>
+              </i>
+              Notes
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+        <ul class="navbar-nav ">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fa fa-globe">
+                <span class="badge badge-success">11</span>
+              </i>
+              Test
+            </a>
+          </li>
+        </ul>
+        <a href="http://www.example.com" id="test" onclick="dashBoard()"><img src="dashboard.png" alt="dashboard" id="dashboard"></a> 
       </div>
-      
-
-    <!-- <div class=heading>
+    </nav> 
+    <div class=heading>
         Engineering Courses
-    </div> -->
+    </div>
     <div class="econtainer">
     <div class="slider owl-carousel">
       <div class="card">
         <div class="img">
-<img src="#" alt=""></div>
+<img src="./images/CS.jpg" alt=""></div>
 <div class="content">
           <div class="title">
-Briana Tozour</div> 
+Briana Tozour</div>
 <div class="sub-title">
 Graphic Designer</div>
 <p>
@@ -44,7 +99,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis
 </div>
 <div class="card">
     <div class="img">
-<img src="#" alt=""></div>
+<img src="./images/elec.jpg" alt=""></div>
 <div class="content">
       <div class="title">
 Pricilla Preez</div>
@@ -59,7 +114,37 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis
 </div>
 <div class="card">
     <div class="img">
-<img src="#" alt=""></div>
+<img src="images/mechanical.jpg" alt=""></div>
+<div class="content">
+      <div class="title">
+Pricilla Preez</div>
+<div class="sub-title">
+Web Developer</div>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae animi nihil minus sed unde voluptas cumque.</p>
+<div class="btn">
+        <button>Read more</button>
+      </div>
+</div>
+</div>
+<div class="card">
+    <div class="img">
+<img src="./images/welding.jpg" alt=""></div>
+<div class="content">
+      <div class="title">
+Pricilla Preez</div>
+<div class="sub-title">
+Web Developer</div>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae animi nihil minus sed unde voluptas cumque.</p>
+<div class="btn">
+        <button>Read more</button>
+      </div>
+</div>
+</div>
+<div class="card">
+    <div class="img">
+<img src="/images/robotics.png" alt=""></div>
 <div class="content">
       <div class="title">
 Pricilla Preez</div>
@@ -151,7 +236,23 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis
 </div>
 <div class="card">
   <div class="img">
-<img src="#" alt=""></div>
+<img src="images/comm4.jpg" alt=""></div>
+<div class="content">
+    <div class="title">
+Pricilla Preez</div>
+<div class="sub-title">
+Web Developer</div>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae animi nihil minus sed unde voluptas cumque.</p>
+<div class="btn">
+  <button><a href="playlist1.html">Read more</a> </button>
+      
+    </div>
+</div>
+</div>
+<div class="card">
+  <div class="img">
+<img src="images/comm3.jpg" alt=""></div>
 <div class="content">
     <div class="title">
 Pricilla Preez</div>
@@ -175,14 +276,45 @@ Web Developer</div>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae animi nihil minus sed unde voluptas cumque.</p>
 <div class="btn">
-      <button>Read more</button>
+  <button><a href="playlist1.html">Read more</a> </button>
+      
     </div>
 </div>
 </div>
-
+<div class="card">
+  <div class="img">
+<img src="images/comm2.png" alt=""></div>
+<div class="content">
+    <div class="title">
+Pricilla Preez</div>
+<div class="sub-title">
+Web Developer</div>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae animi nihil minus sed unde voluptas cumque.</p>
+<div class="btn">
+  <button><a href="playlist1.html">Read more</a> </button>
+      
+    </div>
+</div>
+</div>
 <div class="card">
       <div class="img">
 <img src="#" alt=""></div>
+<div class="content">
+        <div class="title">
+Pricilla Preez</div>
+<div class="sub-title">
+Web Developer</div>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae animi nihil minus sed unde voluptas cumque.</p>
+<div class="btn">
+  <button><a href="playlist1.html">Read more</a> </button>
+        </div>
+</div>
+</div>
+<div class="card">
+      <div class="img">
+<img src="images/comm1.jpg" alt=""></div>
 <div class="content">
         <div class="title">
 Eliana Maia</div>
@@ -191,13 +323,14 @@ App Developer</div>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae animi nihil minus sed unde voluptas cumque.</p>
 <div class="btn">
-          <button>Read more</button>
+  <button><a href="playlist1.html">Read more</a> </button>
+          
         </div>
 </div>
 </div>
 </div>
 </div>
-<script >
+<script>
       $(".slider").owlCarousel({
         loop: true,
         autoplay: true,
