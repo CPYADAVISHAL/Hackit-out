@@ -96,12 +96,5 @@ videos.forEach(selected_video => {
     }
 });
 
-let text = "dgerg"
-// info section 
-data.forEach((info, i) => {
-    let info_element = `
-        <h3>Description</h3>
-        <p>${info.text}</p>
-    `;
-    
-})
+
+
