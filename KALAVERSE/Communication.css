@@ -1,0 +1,27 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    /* position: relative;
+    top: 20px; */
+}
+.logoAndName{
+    padding: 10px 40px 10px 40px;
+    /* width: 10px; */
+    /* height: 40px; */
+    /* border: 2px solid red; */
+    /* position: relative; */
+    /* top: 20px;  */
+    /* left: 90px; */
+}
+.logoAndName img{
+    width: 150px;
+}
+.verticalLine img{
+    width: 20px;
+    height: 20px;
+}
+.playlistName{
+    font-weight: bolder;
+    margin-left: 10px;
+    margin-right: 475px;
+}
