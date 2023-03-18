@@ -123,13 +123,13 @@ height: 800px;
     display:flex;
     margin:2% 10% 2%;
     border: 1px solid black;
-    border:2px solid red;
+   
     border-radius:20px;
 
 }
 .trending{
     font-size:2rem;
-    color:rgb(190, 10, 40);
+    color:black;
     text-align: center;
     font-weight: bolder;
     }
