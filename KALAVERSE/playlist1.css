@@ -13,7 +13,7 @@ body {
     align-items: center;    
 }
 
-@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+/* @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"); */
 
 
 .navbar-icon-top .navbar-nav .nav-link > .fa {
@@ -161,7 +161,7 @@ body {
 }
 
 .video-playlist .title {
-    padding-left: 1rem;
+    padding-left: 0.5rem;
 }
 
 .video-playlist > p {
