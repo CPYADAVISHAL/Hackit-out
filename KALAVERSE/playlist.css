@@ -1,0 +1,53 @@
+:root{
+    --primary:rgb(210, 169, 255);
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.container{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1.9fr 1.1fr;
+    gap: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.EducationVideo video{
+    width: 1000px;
+    height: 500px;
+    padding:0px 0px 40px 0px;
+}
+.title{
+    font-size: larger;
+}
+.playlist img{
+    width: 40px;
+    height: 40px;   
+    padding:10px 0px 2px 10px;
+}
+.playlist .lectures .lecture .p{
+   position: relative;
+   top: 10px;
+    font-size: 2rem;
+}
+.lecture img{
+    position: relative;
+    bottom: 100%    ;
+}
+.playlist .lectures .lecture{
+    display: flex;
+    padding: 10px;
+    border: 2px solid rgb(70, 68, 68) ;
+    margin: 10px;
+    border-radius: 1.2rem;
+}
+.lecture:hover{
+    box-shadow: .4rem .4rem rgb(132, 130, 130);
+}
